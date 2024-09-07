@@ -6,13 +6,13 @@ import { CircleArrowDown, CircleArrowUp } from "lucide-react";
 function BalanceOverview() {
   return (
     <Card className="w-full rounded-t-none rounded-b-3xl">
-      <CardHeader>
+      <CardHeader className="fixed top-0 left-0 w-full z-10 bg-card bg-opacity-10">
         <CardTitle className="flex flex-row justify-start items-center gap-[5.3rem] p-2">
           <AvatarMenu />
           <SelectMonth />
         </CardTitle>
       </CardHeader>
-      <CardContent className="text-center mb-6">
+      <CardContent className="text-center mt-[100px] mb-6">
         <p className="text-muted-foreground">Saldo actual en cuentas</p>
         <h1 className="text-3xl font-bold pt-1 pb-3">R$548.02</h1>
         <div className="flex justify-around mt-4">
