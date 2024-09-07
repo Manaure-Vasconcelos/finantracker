@@ -1,31 +1,22 @@
-import "./App.css";
-import Accounts from "./components/Accounts";
-import BalanceChart from "./components/BalanceChart";
-import BalanceOverview from "./components/BalanceOverview";
+import { Route, Routes } from "react-router-dom";
 import NavMobile from "./components/NavMobile";
-import AvatarMenu from "./components/AvatarMenu";
-import SelectMonth from "./components/SelectMonth";
 import { ThemeProvider } from "./components/theme-provider";
+import HomePage from "./routes/HomePage";
+import TransactionsHistory from "./routes/TransactionsHistory";
+import AnalyticsDashboard from "./routes/AnalyticsDashboard";
+import FinancialGoals from "./routes/FinancialGoals";
 
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="bg-black  text-white min-h-screen w-screen px-4 py-6">
-        <div className="flex justify-between items-center mb-4">
-          <div className="flex justify-start items-center space-x-28">
-            <AvatarMenu />
-            <SelectMonth />
-          </div>
-        </div>
-
-        <BalanceOverview />
-
-        <Accounts />
-
-        <BalanceChart />
-
-        <NavMobile />
-      </div>
+      <Routes>
+        <Route path="/" element={<NavMobile />}>
+          <Route index element={<HomePage />} />
+          <Route path="transactions" element={<TransactionsHistory />} />
+          <Route path="analytics" element={<AnalyticsDashboard />} />
+          <Route path="goals" element={<FinancialGoals />} />
+        </Route>
+      </Routes>
     </ThemeProvider>
   );
 }

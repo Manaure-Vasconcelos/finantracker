@@ -1,9 +1,8 @@
-import Accounts from "./components/Accounts";
-import AvatarMenu from "./components/AvatarMenu";
-import BalanceChart from "./components/BalanceChart";
-import BalanceOverview from "./components/BalanceOverview";
-import NavMobile from "./components/NavMobile";
-import SelectMonth from "./components/SelectMonth";
+import Accounts from "../components/Accounts";
+import AvatarMenu from "../components/AvatarMenu";
+import BalanceChart from "../components/BalanceChart";
+import BalanceOverview from "../components/BalanceOverview";
+import SelectMonth from "../components/SelectMonth";
 
 function HomePage() {
   return (
@@ -20,8 +19,6 @@ function HomePage() {
       <Accounts />
 
       <BalanceChart />
-
-      <NavMobile />
     </div>
   );
 }
