@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import NavMobile from "./components/NavMobile";
+import Navigation from "./components/Navigation";
 import { ThemeProvider } from "./components/theme-provider";
 import HomePage from "./routes/HomePage";
 import TransactionsHistory from "./routes/TransactionsHistory";
@@ -10,7 +10,7 @@ function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Routes>
-        <Route path="/" element={<NavMobile />}>
+        <Route path="/" element={<Navigation />}>
           <Route index element={<HomePage />} />
           <Route path="transactions" element={<TransactionsHistory />} />
           <Route path="analytics" element={<AnalyticsDashboard />} />
