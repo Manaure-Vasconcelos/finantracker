@@ -1,29 +1,50 @@
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Edit, Info } from "lucide-react";
+import { Separator } from "./ui/separator";
+
 function Accounts() {
   return (
-    <div className="bg-gray-800 rounded-lg p-4 mb-6">
-      <h2 className="text-gray-400 mb-4">Cuentas</h2>
-      <div className="flex justify-between items-center mb-4">
-        <div className="flex items-center">
-          <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
-            💸
+    <Card className="bg-slate-800">
+      <CardHeader>
+        <CardTitle className="text-muted-foreground flex items-center justify-between">
+          Cuentas
+          <Edit size={20} />
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="flex flex-col">
+        <div className="flex justify-between items-center mb-4">
+          <div className="flex items-center">
+            <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+              💸
+            </div>
+            <div className="ml-2">Primary</div>
           </div>
-          <div className="ml-2">Other</div>
+          <p>$10448.02</p>
         </div>
-        <p>R$448.02</p>
-      </div>
-      <div className="flex justify-between items-center">
-        <div className="flex items-center">
-          <div className="w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center">
-            👤
+        <div className="flex justify-between items-center">
+          <div className="flex items-center">
+            <div className="w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center">
+              👤
+            </div>
+            <div className="ml-2">Secondary</div>
           </div>
-          <div className="ml-2">Pessoal</div>
+          <p>R$100.00</p>
         </div>
-        <p>R$100.00</p>
-      </div>
-      <div className="text-right mt-4">
-        <p>Total: R$548.02</p>
-      </div>
-    </div>
+      </CardContent>
+      <Separator className='bg-muted-foreground'/>
+      <CardFooter className="flex justify-between mt-3">
+        <p className="flex items-center gap-2">
+          Total: <Info size={18} />
+        </p>
+        <p>R$548.02</p>
+      </CardFooter>
+    </Card>
   );
 }
 

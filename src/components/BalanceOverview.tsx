@@ -7,7 +7,7 @@ function BalanceOverview() {
   return (
     <Card className="w-full rounded-t-none rounded-b-3xl">
       <CardHeader>
-        <CardTitle className="flex flex-row justify-start items-center gap-[5.3rem]">
+        <CardTitle className="flex flex-row justify-start items-center gap-[5.3rem] p-2">
           <AvatarMenu />
           <SelectMonth />
         </CardTitle>
