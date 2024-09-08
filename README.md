@@ -1,18 +1,24 @@
-# FinanTracker
 
-Um app web de gerenciamento de gasto inicialmente pensado para resolver uma necessidade pessoal. <br/>
-Atualmente morando fora do Brasil, enfrento a necessidade de fazer cambio entre moedas frequentemente, e isso torna o planejamento financeiro um pouco mais complicado. <br/>
-Traz o controle dos fluxo de gastos e ganhos diários, uso de duas moedas: uma principal e outra estrangeira, traz a cotação atual direto da API da Bitso, uma plataforma de criptomoedas onde costumo me basear a taxa de cambio ou inserir o valor manualmente, se preferir. <br/>
-Futuramente será criada uma API Rest para integrar a interface.<br/>
-Em desenvolvimento... <br/>
-Aberto a qualquer contribuição.
+# **FinanTracker**
 
-## Índice
-1. [Descrição](#descrição)
-2. [Instalação](#instalação)
+Um **app web de gerenciamento de gastos** inicialmente pensado para resolver uma necessidade pessoal.  
+Atualmente morando fora do Brasil, enfrento a necessidade de fazer câmbio entre moedas frequentemente, o que torna o planejamento financeiro um pouco mais complicado. 
 
-## Descrição
-Descreva brevemente o que o projeto faz, por que ele é útil e quem são os principais usuários.
+
+## **Principais Funcionalidades**:
+- **Controle diário** de gastos e ganhos;
+- Uso de **duas moedas**: uma principal e outra estrangeira;
+- Cotação atual direto da **API da Bitso** ou inserção manual, para uma taxa de câmbio personalizada.
+
+
+## **Próximos Passos**:
+- Desenvolvimento de uma **API Rest** que irá integrar com a interface para controle total do app.
+
+
+## **Status**: Em desenvolvimento... 🚧  
+Aberto a **contribuições**, especialmente em **Frontend**, devido ao foco atual no **desenvolvimento da API** que fará todo o controle do app.
+
+<br/>
 
 ## Instalação
 
