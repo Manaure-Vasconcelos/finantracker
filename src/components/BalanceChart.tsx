@@ -40,7 +40,7 @@ function BalanceChart() {
         <CardTitle className="text-muted-foreground">Resumen Semanal</CardTitle>
       </CardHeader>
       <CardContent className="mt-3">
-        <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
+        <ChartContainer config={chartConfig} className="min-h-[180px] w-full">
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
             <XAxis

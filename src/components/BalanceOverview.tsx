@@ -12,7 +12,7 @@ function BalanceOverview() {
           <SelectMonth />
         </CardTitle>
       </CardHeader>
-      <CardContent className="text-center mt-[100px] mb-6">
+      <CardContent className="text-center mt-[90px] mb-2">
         <p className="text-muted-foreground">Saldo actual en cuentas</p>
         <h1 className="text-3xl font-bold pt-1 pb-3">R$548.02</h1>
         <div className="flex justify-around mt-4">
